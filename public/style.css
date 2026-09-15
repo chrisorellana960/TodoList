@@ -2,114 +2,215 @@
     box-sizing: border-box;
 }
 
+
 body {
     margin: 0;
+
     font-family: Arial, sans-serif;
+
     background: #f4f6f8;
+
     color: #222;
 }
 
+
+/* ENCABEZADO */
+
 header {
     background: #1f2937;
+
     color: white;
+
     text-align: center;
+
     padding: 30px 20px;
 }
 
+
 header h1 {
     margin: 0;
+
     font-size: 36px;
 }
 
+
 header p {
     margin-top: 8px;
+
+    font-size: 17px;
 }
+
+
+/* CONTENEDOR PRINCIPAL */
 
 main {
     width: 90%;
+
     max-width: 1000px;
+
     margin: 30px auto;
 }
 
+
 section {
     background: white;
+
     padding: 25px;
+
     margin-bottom: 25px;
+
     border-radius: 12px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+
+    box-shadow:
+        0 3px 10px rgba(0, 0, 0, 0.08);
 }
+
 
 h2 {
     margin-top: 0;
 }
 
+
+/* FORMULARIO */
+
 form {
     display: flex;
+
     flex-direction: column;
+
     gap: 12px;
 }
+
 
 input,
 textarea,
 select {
     padding: 12px;
+
     border: 1px solid #ccc;
+
     border-radius: 8px;
+
     font-size: 15px;
 }
 
+
 textarea {
     resize: vertical;
+
     min-height: 90px;
 }
 
+
 button {
     padding: 12px;
+
     border: none;
+
     border-radius: 8px;
+
     background: #2563eb;
+
     color: white;
+
     font-size: 16px;
+
     cursor: pointer;
 }
+
 
 button:hover {
     background: #1d4ed8;
 }
 
+
+/* FILTROS V2 */
+
+.filtros {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+
+.filtros input,
+.filtros select {
+    width: 100%;
+}
+
+
+/* TARJETAS DE TAREAS */
+
 .tarea {
     border: 1px solid #ddd;
+
     border-radius: 10px;
+
     padding: 18px;
+
     margin-bottom: 15px;
+
+    background: #fafafa;
 }
+
 
 .tarea h3 {
     margin-top: 0;
+
+    margin-bottom: 12px;
 }
+
 
 .tarea p {
     margin: 8px 0;
 }
 
+
 .estado {
     font-weight: bold;
 }
 
+
+/* BOTÓN EDITAR */
+
+.btn-editar {
+    background: #16a34a;
+
+    margin-top: 10px;
+
+    margin-right: 8px;
+}
+
+
+.btn-editar:hover {
+    background: #15803d;
+}
+
+
+/* BOTÓN ELIMINAR */
+
 .btn-eliminar {
     background: #dc2626;
+
     margin-top: 10px;
 }
+
 
 .btn-eliminar:hover {
     background: #b91c1c;
 }
 
-.btn-editar {
-    background: #16a34a;
-    margin-top: 10px;
-}
 
-.btn-editar:hover {
-    background: #15803d;
+/* MENSAJE CUANDO NO HAY RESULTADOS */
+
+.sin-resultados {
+    text-align: center;
+
+    padding: 20px;
+
+    color: #666;
+
+    font-size: 16px;
 }
