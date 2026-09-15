@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TodoList v1.0</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>TodoList</h1>
+        <p>Gestor de tareas - Versión 1.0</p>
+    </header>
+
+    <main>
+
+        <section class="formulario">
+            <h2>Crear nueva tarea</h2>
+
+            <form id="formTarea">
+
+                <input
+                    type="text"
+                    id="titulo"
+                    placeholder="Título de la tarea"
+                    required
+                >
+
+                <textarea
+                    id="descripcion"
+                    placeholder="Descripción"
+                ></textarea>
+
+                <select id="estado">
+                    <option value="PENDIENTE">PENDIENTE</option>
+                    <option value="EN PROGRESO">EN PROGRESO</option>
+                    <option value="COMPLETADA">COMPLETADA</option>
+                </select>
+
+                <button type="submit">
+                    Crear tarea
+                </button>
+
+            </form>
+        </section>
+
+        <section>
+            <h2>Lista de tareas</h2>
+
+            <div id="listaTareas"></div>
+        </section>
+
+    </main>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
